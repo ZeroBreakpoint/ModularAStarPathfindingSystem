@@ -1,0 +1,10 @@
+﻿  AIE_Starter.cpp
+  NodeMap.cpp
+  PathAgent.cpp
+  Pathfinding.cpp
+  Generating code
+  458 of 465 functions (98.5%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  AIE_Starter.vcxproj -> C:\Users\bradl\OneDrive\Desktop\ModularAStarPathfindingSystem\x64\Release\AIE_Starter.exe

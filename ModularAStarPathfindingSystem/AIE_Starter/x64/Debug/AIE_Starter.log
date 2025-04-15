@@ -1,0 +1,14 @@
+﻿  AIE_Starter.cpp
+  NodeMap.cpp
+  PathAgent.cpp
+  Pathfinding.cpp
+  Generating Code...
+AIE_Starter.obj : error LNK2019: unresolved external symbol __imp__invalid_parameter referenced in function "void * __cdecl std::_Allocate_manually_vector_aligned<struct std::_Default_allocate_traits>(unsigned __int64)" (??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z)
+NodeMap.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter
+PathAgent.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter
+Pathfinding.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter
+AIE_Starter.obj : error LNK2019: unresolved external symbol __imp__CrtDbgReport referenced in function "void * __cdecl std::_Allocate_manually_vector_aligned<struct std::_Default_allocate_traits>(unsigned __int64)" (??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z)
+NodeMap.obj : error LNK2001: unresolved external symbol __imp__CrtDbgReport
+PathAgent.obj : error LNK2001: unresolved external symbol __imp__CrtDbgReport
+Pathfinding.obj : error LNK2001: unresolved external symbol __imp__CrtDbgReport
+C:\Users\bradl\OneDrive\Documents\GitHub\AI For Games 1 - BRobertson\x64\Debug\AIE_Starter.exe : fatal error LNK1120: 2 unresolved externals
