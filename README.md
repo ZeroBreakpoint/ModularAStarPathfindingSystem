@@ -4,7 +4,7 @@ This project implements a modular, multithreaded A* pathfinding system for 2D gr
 
 The system features:
 - **Multithreaded A\*** searches to offload pathfinding from the main thread.
-- **Modular architecture**: decoupled classes for agents, map, and pathfinding logic.
+- **Modular architecture**: decoupled classes for agents, map and pathfinding logic.
 - **Smooth agent movement** with overshoot correction.
 - **Interactive test application** built using Raylib and GLM.
 
