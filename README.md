@@ -8,8 +8,6 @@ The system features:
 - **Smooth agent movement** with overshoot correction.
 - **Interactive test application** built using Raylib and GLM.
 
----
-
 ## Controls
 
 - **Left Click**: Set the **start node** for the player-controlled agent (green).
@@ -17,8 +15,6 @@ The system features:
 - **`W` Key**: Toggle the autonomous **Wanderer agent** (blue) on/off.
   - When active, it continuously picks a new random destination once it finishes each path.
 - Real-time feedback is printed to the console, including pathfinding thread activity and debug logs.
-
----
 
 ##  Key Features
 
