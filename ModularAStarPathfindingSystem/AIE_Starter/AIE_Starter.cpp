@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
     int screenWidth = 1200;
     int screenHeight = 850;
     InitWindow(screenWidth, screenHeight, "A* Pathfinding - MultiThreaded Programming - Bradley Robertson");
-    SetTargetFPS(60);
+    SetTargetFPS(120);
 
     // Define the ASCII map where 0 = empty, 1 = walkable
     std::vector<std::string> asciiMap = {
