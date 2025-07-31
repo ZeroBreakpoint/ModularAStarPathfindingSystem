@@ -125,15 +125,18 @@ std::vector<Node*> NodeMap::AStarSearch(Node* startNode, Node* endNode) {
         return std::vector<Node*>();
     }
 
-    auto heuristic = [](Node* a, Node* b) {
-        // Heuristic: Squared Euclidean distance
-        glm::vec2 diff = b->position - a->position;
-        return glm::dot(diff, diff);
+    auto heuristic = [this](Node* a, Node* b) {
+        // Convert world position to grid coordinates
+        int ax = static_cast<int>(a->position.x / m_cellSize);
+        int ay = static_cast<int>(a->position.y / m_cellSize);
+        int bx = static_cast<int>(b->position.x / m_cellSize);
+        int by = static_cast<int>(b->position.y / m_cellSize);
+        return std::abs(ax - bx) + std::abs(ay - by);
         };
 
     // Initialise start node
     startNode->gScore = 0;
-    startNode->hScore = heuristic(startNode, endNode);
+    startNode->hScore = static_cast<float>(heuristic(startNode, endNode));
     startNode->fScore = startNode->gScore + startNode->hScore;
     startNode->previous = nullptr;
 
@@ -158,7 +161,7 @@ std::vector<Node*> NodeMap::AStarSearch(Node* startNode, Node* endNode) {
             Node* targetNode = connection.target;
             if (std::find(closedList.begin(), closedList.end(), targetNode) == closedList.end()) {
                 float tentative_gScore = currentNode->gScore + connection.cost;
-                float tentative_hScore = heuristic(targetNode, endNode);
+                float tentative_hScore = static_cast<float>(heuristic(targetNode, endNode));
                 float tentative_fScore = tentative_gScore + tentative_hScore;
 
                 if (std::find(openList.begin(), openList.end(), targetNode) == openList.end()) {
