@@ -19,7 +19,7 @@ The system features:
 ##  Key Features
 
 - **A\* Pathfinding Algorithm**  
-  Custom implementation with squared Euclidean heuristic (no external dependencies).
+  Custom implementation with Manhattan distance.
 
 - **Multithreading**  
   Thread-safe path calculation using `std::thread`, `std::mutex`, and `std::atomic` for responsiveness.
